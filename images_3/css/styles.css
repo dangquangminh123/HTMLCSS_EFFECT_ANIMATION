@@ -1,0 +1,85 @@
+.section-header h2 {
+    font-family: baloo;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.single-team {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.single-team:after,
+.single-team:before {
+    position: absolute;
+    content: '';
+}
+
+.single-team:before {
+    width: 90%;
+    height: 220%;
+    background: rgba(89, 5, 253, 0.5);
+    top: -68%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(21deg);
+    transform-origin: center top 0;
+    transition: all .5s ease 0s;
+}
+
+.single-team:hover:before {
+    left: 10%;
+}
+
+.single-team .team-text {
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    transition: all 1.1s ease 0s;
+}
+
+.single-team:hover:after {
+    bottom: -70%;   
+}
+
+.single-team img {
+    width: 100%;
+    height: auto;
+}
+
+.single-team .team-text {
+    top: -100%;
+}
+
+.single-team:hover .team-text {
+    top: 60px;
+}
+
+.single-team .team-text h3{
+    font-size: 30px;
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+.single-team .team-text h4{
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    font-family: poppins;
+    color: #fff;
+}
+
+.single-team .team-text p i {
+    font-size: 20px;
+    margin: 0 5px;
+    color: #fff;
+}
+
+
+

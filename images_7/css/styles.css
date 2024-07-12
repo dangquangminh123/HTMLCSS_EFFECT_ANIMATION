@@ -1,0 +1,94 @@
+body {
+    background-color: mistyrose;
+}
+
+.our-team-area {
+    padding: 100px 0;
+}
+
+.team-area {
+    background-color: #262626;
+    margin-bottom: 10px;
+}
+
+.team-area .img-area {
+    overflow: hidden;
+    position: relative;
+}
+
+.team-area .img-area img {
+    width: 100%;
+    height: 200px;
+    transition: all 0.4s ease 0s;
+}
+
+.team-area .img-area:hover img {
+    transform: scale(1.2);
+}
+
+
+
+.team-area .img-area .social {
+    background-color: rgba(218, 30, 64, 0.6);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .5s ease-out;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+.team-area:hover .social{
+    cursor: pointer;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: rotateY(0deg) scale(1, 1);
+}
+
+.team-area .img-area .social ul {
+    text-align: center;
+    position: relative;
+    top: 125px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-area .img-area .social ul li a{
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 35px;
+    text-align: center;
+    width: 35px;
+}
+
+.team-area .img-area .social ul li a:hover {
+    background-color: #fff;
+    color: #da1e40;
+    border: 1px solid transparent;
+}
+
+.team-area .img-text {
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.team-area .img-text h4 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.team-area .img-text h5 {
+    font-size: 15px;
+    font-family: 'poppins';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
